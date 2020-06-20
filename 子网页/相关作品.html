@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/相关作品.css">
+</head>
+<body>
+    <div id="header">
+        <ul>
+            <li id="L1"><h1>克苏鲁神话</h1></li>
+            <li id="L2">
+                <a href="../index.html" target="_self">首页</a><span>|</span>
+                <a href="世界观.html" target="_self">世界观</a><span>|</span>
+                <a href="图鉴.html" target="_self">图鉴</a>
+            </li>
+        </ul>
+    </div>
+    <div id="container-1"><hr id="hr1"/>
+        <!-- 建立一个div控件作为图片框 -->
+        <div class="imgBox">
+            <!-- alt：图片路径失败时替换显示内容 -->
+            <img class="img-slide img" src="../image/相关作品/1.jpg" alt="img1">
+            <img class="img-slide img" src="../image/相关作品/2.jpg" alt="img2">
+            <img class="img-slide img" src="../image/相关作品/3.jpg" alt="img3">
+            <img class="img-slide img" src="../image/相关作品/4.jpg" alt="img4">
+            <img class="img-slide img" src="../image/相关作品/5.jpg" alt="img5">
+        </div>
+    </div>
+    <div id="container-2">
+        <div id="cont-2-1">
+            <h1>主要作家</h1><p></p>
+            <a href="https://baike.baidu.com/item/霍华德·菲利普·洛夫克拉夫特/2766855">霍华德·菲利普·洛夫克拉夫特(Howard Phillips Lovecraft)</a><p></p>
+            <h2>奥古斯特·威廉·德雷斯(August William Derleth)</h2><p></p>
+            <h2>克拉克·阿什顿·史密斯(Clark Ashton Smith)</h2><p></p>
+            <h2>林伍德·沃鲁曼·卡特(Linwood Vrooman Carte)</h2><p></p>
+            <h2>布莱恩·拉姆利(Brian Lumley)</h2><p></p>
+            <h2>拉姆齐·坎贝尔(Ramsey Campbell)</h2><p></p>
+            <h2>亨利·卡特纳(Henry Kuttner)</h2><p></p>
+            <a href="https://baike.baidu.com/item/罗伯特·布洛克/5754699">罗伯特·布洛克(Robert Bloch)</a><p></p>
+            <h2>弗兰克·贝克纳普·朗(Frank Belknap Long)</h2><p></p>
+            <h2>小华尔特·C·德比尔(Walter C. DeBill, Jr.)</h2><p></p>
+        </div>
+        <div id="cont-2-2">
+            <h1>衍生作品</h1><p></p>
+            <h3>大量游戏/动漫/电影/小说都或多或少的有一点克苏鲁神话的影子，下面是一些有名的例子。</h3><p></p>
+            <h2>游戏</h2><p></p>
+            <h3>星际争霸：埃蒙</h3><p></p>
+            <a href="https://baike.baidu.com/item/魔兽世界/66392">魔兽世界:</a><h3>上古之神的名字为克苏鲁神话中部分旧日支配者或外神名字的变体。</h3><p></p>
+            <a href="https://baike.baidu.com/item/上古卷轴/1811809">上古卷轴:</a><h3>天际 DLC，龙裔，《黑暗魔经》。</h3><p></p>
+            <h2>影视作品</h2><p></p>
+            <a href="https://baike.baidu.com/item/Fate%2FZero/27485">Fate/Zero:</a><h3>动漫作品，动画13集，Caster吉尔·德·雷在未远河召唤出带有克苏鲁元素的海魔。</h3><p></p>
+            <a href="https://baike.baidu.com/item/迪迦·奥特曼/13236751?fromtitle=%E8%BF%AA%E8%BF%A6%E5%A5%A5%E7%89%B9%E6%9B%BC&fromid=571943">迪迦奥特曼:</a><h3>故事背景以及剧情里加入了大量克苏鲁神话元素，引用元素的怪兽为比佐摩, 齐杰拉, 佐加以及毁灭了超古代文明的最终boss加坦杰厄，且其原型就是邪神加塔诺托亚。露露耶遗迹日文即为拉莱耶。</h3><p></p>
+            <h2>小说</h2><p></p>
+            <a href="https://baike.baidu.com/item/诡秘之主/22466085">诡秘之主:</a><h3>诡秘之主的设定与世界观中出现了许多克苏鲁元素。</h3><p></p>
+            <a href="https://baike.baidu.com/item/我的细胞监狱/23885555">我的细胞监狱:</a><h3>合作者之一：黄袍（黄衣之王哈斯塔）、主角收容物之一：妮可(深潜者·皇室)、星之彩、死灵之书（眼部抄本）、命运空间（克系世界）</h3><p></p>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript">
+    // index：索引， len：长度
+    var index = 0, len;
+    // 类似获取一个元素数组
+    var imgBox = document.getElementsByClassName("img-slide");
+    len = imgBox.length;
+    imgBox[index].style.display = 'block';
+    // 逻辑控制函数
+    function slideShow() {
+        index ++;
+        // 防止数组溢出
+        if(index >= len) index = 0;
+        // 遍历每一个元素
+        for(var i=0; i<len; i++) {
+            imgBox[i].style.display = 'none';
+        }
+        // 每次只有一张图片显示
+        imgBox[index].style.display = 'block';
+    }
+    
+    // 定时器，间隔3s切换图片
+    setInterval(slideShow, 10000);   
+</script>
+</html>

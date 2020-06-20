@@ -1,0 +1,49 @@
+body{
+    background-color: black;
+}
+#header{
+    width:100%;
+    margin-top: 30px;
+    height: 100px;
+    box-shadow: 0px 0px 1px red;
+}
+#header h1{
+    color: rgb(102,0,0);
+    font-family: verdana,Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 100px;
+    margin: 0;
+    text-align: center;
+}
+#nav{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 20%;
+    height: 200px;
+    float: right;
+    box-shadow: 1px 1px 2px #c1c1c1;
+    position: fixed;
+}
+#nav h1{
+    color: red;
+    margin-top: 90px;
+}
+#container{
+    margin-top: 20px;
+    margin-right: 5px;
+    width: 75%;
+    float: right;
+    box-shadow: 1px 1px 2px #c1c1c1;
+    padding: 30px;
+}
+h1{
+    color: #fff;
+}
+h2{
+    color: #fff;
+    text-indent: 2em;
+}
+img{
+    margin-left: 20%;
+}

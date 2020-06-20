@@ -1,0 +1,96 @@
+body{
+    background-color: #f5f5f5;
+}
+#header{
+    margin: 0px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #e6e6e6;
+}
+#header a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+li{
+    display: inline-block;
+    list-style: none;
+    float: left;
+    width: 300px;
+}
+#L1{
+    display: inline-block;
+    float: left;
+    line-height: 60px;
+    height: 60px;
+    width: 400px;
+}
+#L1 h1{
+    display: inline-block;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 17.5px;
+    margin-left: 50px;
+}
+#L2{
+    font-size: 20px;
+    display: inline-block;
+    float: right;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 40px;
+}
+#container-1{
+    background-image: url(../image/相关作品/back.jpg);
+}
+#hr1 {
+    background-color: cadetblue;
+    height: 2px;
+    width: 75%;
+}
+.imgbox {
+    border-top: 5px solid cadetblue;
+    width: 60%;
+    height: 600px;
+    margin: 0 auto;
+}
+.img {
+    width: 60%;
+    height: 600px;
+    margin: 0 auto;
+    display: none;
+}
+#cont-2-1{
+    margin-left: 20px;
+    margin-right: 65%;
+    border-top: 5px solid cadetblue;
+}
+#cont-2-1 a{
+    margin-left: 40px;
+    font-size: 20px;
+    text-decoration: blue;
+}
+#cont-2-1 h2{
+    text-indent: 2em;
+    font-size: 20px;
+    font-weight: normal;
+}
+#cont-2-2{
+    margin-left: 20px;
+    border-top: 5px solid cadetblue;
+}
+#cont-2-2 a{
+    margin-left: 40px;
+    font-size: 20px;
+    text-decoration: blue;
+}
+#cont-2-2 h3{
+    text-indent: 2em;
+    font-size: 20px;
+    font-weight: normal;
+}
